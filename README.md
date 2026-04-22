@@ -9,4 +9,4 @@ A web app to search recipes using ingredient or name.
 - YouTube video
 
 ## Live Demo
-recipe-finder-3582ab.netlify.app
+https://recipe-finder-3582ab.netlify.app
