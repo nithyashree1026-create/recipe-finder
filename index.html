@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>🍲 Recipe Finder</h1>
+        <p class="subtitle">Search recipes by ingredient or recipe name</p>
+
+        <div class="search-box">
+            <input type="text" id="ingredientInput" placeholder="Enter ingredient or recipe name">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div class="filter-box">
+            <label for="categoryFilter">Filter by Category:</label>
+            <select id="categoryFilter">
+                <option value="all">All</option>
+            </select>
+        </div>
+
+        <p id="searchMessage"></p>
+        <p id="recipeCount"></p>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

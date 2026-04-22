@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #fff5f5, #fffdf7);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.app-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px 14px;
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #ff6b6b;
+}
+
+button {
+    padding: 12px 18px;
+    font-size: 16px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff4b4b;
+}
+
+.filter-box {
+    margin: 15px 0 20px;
+}
+
+.filter-box label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.filter-box select {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+#searchMessage {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #555;
+    font-weight: bold;
+}
+
+#recipeCount {
+    margin-top: 8px;
+    color: #777;
+    font-size: 16px;
+}
+
+.loader {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.loader-spinner {
+    width: 40px;
+    height: 40px;
+    border: 5px solid #ffd6d6;
+    border-top: 5px solid #ff6b6b;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 12px;
+}
+
+.loader p {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#results {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.meal-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 14px;
+    width: 240px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.meal-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.meal-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.meal-card h3 {
+    margin: 8px 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.card-info {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.detail-card {
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.detail-card img {
+    width: 100%;
+    max-width: 380px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 14px;
+}
+
+.detail-card h2 {
+    text-align: center;
+    color: #333;
+}
+
+.detail-card p {
+    line-height: 1.6;
+}
+
+.detail-card ul,
+.detail-card ol {
+    padding-left: 22px;
+}
+
+.detail-card ul li,
+.detail-card ol li {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+.section-title {
+    color: #ff6b6b;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#backBtn {
+    padding: 10px 16px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#backBtn:hover {
+    background-color: #ff4b4b;
+}
+
+.detail-card a {
+    display: inline-block;
+    margin-top: 12px;
+    color: white;
+    background-color: #ff6b6b;
+    padding: 10px 14px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.detail-card a:hover {
+    background-color: #ff4b4b;
+}
+
+.no-result {
+    font-size: 18px;
+    color: #777;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .search-box {
+        flex-direction: column;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    .meal-card {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .detail-card {
+        padding: 18px;
+    }
+}
