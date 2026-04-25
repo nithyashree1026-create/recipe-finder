@@ -16,3 +16,10 @@ This project is completed and deployed successfully.
 
 ## 📸 Screenshot
 ![Project Screenshot](main.png)
+
+## ✨ Key Highlights
+- Clean and responsive UI
+- Beginner-friendly JavaScript project
+- Deployed using Netlify
+
+
