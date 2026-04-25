@@ -13,3 +13,6 @@ https://recipe-finder-3582ab.netlify.app
 
 ## 📌 Status
 This project is completed and deployed successfully.
+
+## 📸 Screenshot
+![Project Screenshot](main.png)
