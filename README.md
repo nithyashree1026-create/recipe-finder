@@ -1,4 +1,4 @@
-# Recipe Finder App 🍲
+## Recipe Finder App 🍲
 
 A web app to search recipes using ingredient or name.
 
@@ -23,4 +23,4 @@ This project is completed and deployed successfully.
 - Deployed using Netlify
 
 ## 🙋‍♀️ Author
-Made with ❤️ by Nithya
+ Nithya
